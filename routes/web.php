@@ -20,4 +20,6 @@ Route::get('/', function () {
 
 Route::controller(DosenController::class)->group(function(){
     Route::get('index',[DosenController::class,'index'])->name('index');
+    Route::get('create',[DosenController::class,'create'])->name('create');
+Route::post('store',[DosenController::class,'store'])->name('store');
 });
